@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>よくある質問 | CoCoLumen</title>
+<style>
+    :root {
+        --coral: #E8967A;
+        --coral-deep: #C97A5E;
+        --lavender: #C9B8F0;
+        --lavender-deep: #9B85D6;
+        --ink: #3A322C;
+        --ink-soft: #8A7F76;
+        --cream: #FAF3EA;
+        --card: #FFFFFF;
+        --line: #E8DED2;
+    }
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+        line-height: 1.8;
+        font-size: 15px;
+    }
+    .container {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    header .icon {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+    h1 {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0 0 6px;
+    }
+    .lead {
+        font-size: 13px;
+        color: var(--ink-soft);
+    }
+    .section-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--coral-deep);
+        margin: 32px 0 10px;
+        padding-left: 2px;
+    }
+    details {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 16px 44px 16px 18px;
+        font-size: 14.5px;
+        font-weight: 600;
+        position: relative;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+        content: "+";
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: var(--coral-deep);
+        font-weight: 400;
+    }
+    details[open] summary::after {
+        content: "–";
+    }
+    details p {
+        margin: 0;
+        padding: 0 18px 18px;
+        font-size: 13.5px;
+        color: var(--ink-soft);
+    }
+    .contact-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 24px 22px;
+        margin-top: 36px;
+        text-align: center;
+    }
+    .contact-card h2 {
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+    .contact-card p {
+        font-size: 13px;
+        color: var(--ink-soft);
+        margin: 0 0 14px;
+    }
+    .contact-card a.button {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--coral), var(--coral-deep));
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 13.5px;
+        padding: 11px 28px;
+        border-radius: 20px;
+    }
+    footer {
+        text-align: center;
+        margin-top: 32px;
+        font-size: 12px;
+        color: var(--ink-soft);
+    }
+    footer a { color: var(--ink-soft); text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
 
+    <header>
+        <div class="icon">📷</div>
+        <h1>よくある質問</h1>
+        <div class="lead">CoCoLumenについてのFAQです</div>
+    </header>
+
+    <div class="section-title">アプリのコンセプト</div>
+
+    <details>
+        <summary>画質が粗いのですが、故障でしょうか?</summary>
+        <p>故障ではありません。CoCoLumenは、きれいに撮ることよりも、撮った瞬間の空気や質感を残すことを大切にしたカメラです。あえて解像度を落とし、レトロな質感のフィルターをかけています。</p>
+    </details>
+
+    <details>
+        <summary>フィルターの種類は選べますか?</summary>
+        <p>撮影画面のボタンから、フィルターのON/OFF、白黒/カラー、質感のプリセット(デジカメ風・スクエア・セピア)を切り替えられます。</p>
+    </details>
+
+    <div class="section-title">3つの撮り方</div>
+
+    <details>
+        <summary>「通常で撮影する」と他の撮り方の違いは何ですか?</summary>
+        <p>「通常で撮影する」は、サーバーを介さず端末の中だけで完結する撮影で、いつでも何回でも使えます。「友達に見てもらう」「友達と一緒に撮る」は、友達とのやり取りを伴う特別な撮り方で、1日1回までの制限があります。</p>
+    </details>
+
+    <details>
+        <summary>「友達に見てもらう」とはどんな機能ですか?</summary>
+        <p>招待した友達が画面を見てくれている間だけ、シャッターが切れる撮り方です。撮った写真は自動的に相手にも届きます。</p>
+    </details>
+
+    <details>
+        <summary>「友達と一緒に撮る」とはどんな機能ですか?</summary>
+        <p>友達が招待を承諾すると、お互いの画面で同時にカウントダウンが始まり、終了と同時に両方のカメラが自動的にシャッターを切ります。2枚の写真がペアとしてお互いのアルバムに保存されます。</p>
+    </details>
+
+    <details>
+        <summary>写真は誰かに見られたり、公開されたりしますか?</summary>
+        <p>いいえ。CoCoLumenにはタイムラインのような公開の仕組みはありません。写真は基本的に端末内にのみ保存され、友達とのやり取りで使った写真だけが、その相手にだけ届きます。</p>
+    </details>
+
+    <div class="section-title">現像・アルバムについて</div>
+
+    <details>
+        <summary>「未現像」「現像済み」とは何ですか?</summary>
+        <p>CoCoLumenでは、フィルムカメラのように、一定枚数(12枚)撮影がたまるまでは「未現像」の状態になり、フィルムのネガのような見た目でしか見られません。12枚たまると、まとめて現像され、通常の写真として見られるようになります。</p>
+    </details>
+
+    <details>
+        <summary>アルバムの「バラバラ」「グリッド」とは何ですか?</summary>
+        <p>現像済みの写真は、机の上に無造作に置かれたような「バラバラ」表示と、整然とした「グリッド」表示を切り替えられます。お好みに合わせて選んでください。</p>
+    </details>
+
+    <div class="section-title">課金について</div>
+
+    <details>
+        <summary>無料で使える範囲を教えてください</summary>
+        <p>「通常で撮影する」機能は、購読の有無にかかわらずいつでも無料でお使いいただけます。「友達に見てもらう」「友達と一緒に撮る」機能は、サブスクリプション(1週間の無料トライアルあり)へのご加入が必要です。</p>
+    </details>
+
+    <details>
+        <summary>「フィルム」とは何ですか?</summary>
+        <p>サブスクリプション加入者が、1日1回の無料枠を使い切った後、さらに「友達に見てもらう」「友達と一緒に撮る」を使いたい場合に購入できる追加チケットです。期限はなく、購入した分は貯めておけます。</p>
+    </details>
+
+    <details>
+        <summary>プランの変更や解約はどうすればいいですか?</summary>
+        <p>アプリ内の「設定」から「プランを変更・解約」を選ぶと、Appleの標準的なサブスクリプション管理画面が開き、そこで月額・年額の変更や解約ができます。</p>
+    </details>
+
+    <div class="contact-card">
+        <h2>解決しない場合は</h2>
+        <p>お手数ですが、設定画面に表示されている「サポート用ID」を添えて、下記までご連絡ください。</p>
+        <a class="button" href="mailto:ws.suzunoya@gmail.com">メールで問い合わせる</a>
+    </div>
+
+    <footer>
+        <p>CoCoLumen — SUZUNOYA</p>
+        <p><a href="index.html">プライバシーポリシーはこちら</a></p>
+    </footer>
+
+</div>
+</body>
+</html>
