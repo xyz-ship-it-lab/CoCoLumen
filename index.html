@@ -1,1 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー | CoCoLumen</title>
+<style>
+    :root {
+        --coral: #E8967A;
+        --coral-deep: #C97A5E;
+        --ink: #3A322C;
+        --ink-soft: #8A7F76;
+        --cream: #FAF3EA;
+        --card: #FFFFFF;
+        --line: #E8DED2;
+    }
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+        line-height: 1.8;
+        font-size: 15px;
+    }
+    .container {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 48px 20px 80px;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    header .icon {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+    h1 {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0 0 6px;
+        color: var(--ink);
+    }
+    .updated {
+        font-size: 12.5px;
+        color: var(--ink-soft);
+    }
+    .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 24px 22px;
+        margin-bottom: 16px;
+    }
+    h2 {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--coral-deep);
+        margin: 0 0 12px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--line);
+    }
+    p, li {
+        font-size: 14px;
+        color: var(--ink);
+    }
+    ul {
+        padding-left: 20px;
+        margin: 8px 0;
+    }
+    li {
+        margin-bottom: 6px;
+    }
+    .soft {
+        color: var(--ink-soft);
+        font-size: 13px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+        font-size: 13.5px;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px 6px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+    }
+    th {
+        color: var(--ink-soft);
+        font-weight: 600;
+        width: 34%;
+    }
+    a {
+        color: var(--coral-deep);
+        text-decoration: none;
+        word-break: break-all;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+        text-align: center;
+        margin-top: 32px;
+        font-size: 12px;
+        color: var(--ink-soft);
+    }
+    footer a { color: var(--ink-soft); text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
 
+    <header>
+        <div class="icon">📷</div>
+        <h1>プライバシーポリシー</h1>
+        <div class="updated">最終更新日: 2026年8月25日</div>
+    </header>
+
+    <div class="card">
+        <h2>はじめに</h2>
+        <p>
+            CoCoLumen(以下「本アプリ」)は、個人開発者 SUZUNOYA(以下「開発者」)が提供する、
+            誰かに見てもらいながら撮影する体験を楽しむためのカメラアプリです。
+            本ポリシーは、本アプリの利用にあたって取得する情報とその取り扱いについて説明するものです。
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>取得する情報</h2>
+        <table>
+            <tr>
+                <th>匿名ユーザーID</th>
+                <td>Firebase Authenticationの匿名認証により、端末ごとに一意のIDを発行します。氏名・メールアドレス・電話番号などの個人を直接特定できる情報は取得しません。</td>
+            </tr>
+            <tr>
+                <th>表示名</th>
+                <td>本アプリ内で友達に表示するための任意のニックネームです。実名の入力は不要です。</td>
+            </tr>
+            <tr>
+                <th>写真データ</th>
+                <td>撮影した写真は、基本的に端末内にのみ保存されます。「友達に見てもらう」「友達と一緒に撮る」機能を使った場合のみ、相手に届けるために一時的にサーバー(Firebase Storage)へアップロードされ、相手が受け取った時点、または一定期間経過後に自動的に削除されます。</td>
+            </tr>
+            <tr>
+                <th>フレンド・セッション情報</th>
+                <td>招待・承諾のやり取りや、フレンドとして記録した相手のID・表示名を、Firestore(データベース)に保存します。</td>
+            </tr>
+            <tr>
+                <th>プッシュ通知トークン</th>
+                <td>招待などの通知を届けるため、Firebase Cloud Messagingのトークンを取得・保存します。</td>
+            </tr>
+            <tr>
+                <th>購入情報</th>
+                <td>サブスクリプションおよびアプリ内課金(消費型)の購入・購読状況は、Appleのシステム(StoreKit)を通じて管理され、開発者が決済情報(カード番号など)を直接取得することはありません。</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>情報の利用目的</h2>
+        <ul>
+            <li>「友達に見てもらう」「友達と一緒に撮る」機能の提供のため</li>
+            <li>フレンド関係の管理、招待通知の送信のため</li>
+            <li>サブスクリプション・アプリ内課金の提供、購読状態の確認のため</li>
+            <li>不具合の調査、お問い合わせへの対応のため</li>
+        </ul>
+        <p class="soft">
+            開発者は、取得した情報を広告配信や第三者へのマーケティング目的で利用することはありません。
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>第三者への提供・委託先</h2>
+        <p>
+            本アプリは、以下の外部サービス(Google LLCが提供するFirebase)を利用しています。
+            これらのサービスは、本アプリの機能提供に必要な範囲でのみ情報を取り扱います。
+        </p>
+        <ul>
+            <li>Firebase Authentication(匿名認証)</li>
+            <li>Firebase Firestore(データベース)</li>
+            <li>Firebase Storage(写真の一時保存)</li>
+            <li>Firebase Cloud Messaging(プッシュ通知)</li>
+            <li>Firebase Cloud Functions(通知送信処理)</li>
+        </ul>
+        <p class="soft">
+            各サービスの取り扱いについては、Googleのプライバシーポリシーもあわせてご確認ください。
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>データの保存期間・削除</h2>
+        <ul>
+            <li>端末内に保存された写真は、ユーザー自身が削除するまで保持されます。アプリを削除すると、端末内のデータは失われます。</li>
+            <li>相手に共有するために一時的にアップロードされた写真は、相手が受け取った時点で自動的に削除されます。</li>
+            <li>フレンド・セッション情報の削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>お子様のプライバシーについて</h2>
+        <p>
+            本アプリは、13歳未満のお子様を主な対象とはしていません。
+            13歳未満のお子様が本アプリを利用される場合は、保護者の方の同意・管理のもとでご利用ください。
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>広告について</h2>
+        <p>
+            本アプリは、第三者の広告配信サービスを組み込んでいません。
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>本ポリシーの変更</h2>
+        <p>
+            本ポリシーの内容は、法令の変更や機能追加に伴い、予告なく変更されることがあります。
+            重要な変更がある場合は、本ページ上でお知らせします。
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>お問い合わせ</h2>
+        <p>
+            本ポリシーに関するご質問・ご要望は、以下のメールアドレスまでご連絡ください。
+        </p>
+        <p><a href="mailto:ws.suzunoya@gmail.com">ws.suzunoya@gmail.com</a></p>
+    </div>
+
+    <footer>
+        <p>CoCoLumen — SUZUNOYA</p>
+        <p><a href="support.html">よくある質問(FAQ)はこちら</a></p>
+    </footer>
+
+</div>
+</body>
+</html>
